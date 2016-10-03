@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@android:color/black"
+    tools:context="com.example.modernartui.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="90"
+    android:weightSum="100"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/leftPanel"
+        android:weightSum="100">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:id="@+id/block1"
+            android:background="@android:color/holo_blue_light"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:id="@+id/block2"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@android:color/holo_purple"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="60"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rightPanel"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:weightSum="90">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:id="@+id/block3"
+            android:background="@android:color/holo_red_dark"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:id="@+id/block4"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:id="@+id/block5"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@android:color/holo_blue_dark"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:max="255"
+        android:id="@+id/seekBar" />
+
+</LinearLayout>
